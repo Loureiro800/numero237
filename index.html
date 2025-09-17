@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Numero237</title>
+  <link rel="preload" href="Bodoni-72-Medium.woff2" as="font" type="font/woff2" crossorigin>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    @font-face {
+      font-family: 'Bodoni 72';
+      src: url('BodoniSvtyTwoITCTT-Book.eot');
+      src: url('BodoniSvtyTwoITCTT-Book.eot?#iefix') format('embedded-opentype'),
+          url('BodoniSvtyTwoITCTT-Book.woff2') format('woff2'),
+          url('BodoniSvtyTwoITCTT-Book.woff') format('woff'),
+          url('BodoniSvtyTwoITCTT-Book.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    img{
+      max-width: 100%;
+    }
+
+    .top-header{
+      margin-top: 20px;
+    }
+    .m-b20{
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 2.5em;
+    }
+
+    body {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-family: 'Bodoni 72', Helvetica, Arial, sans-serif;
+      font-weight: 500;
+      font-style: normal;
+      background-color: #e6e3dc;
+      color: #111;
+      line-height: 1.5;
+      font-size: 1.2rem;
+    }
+
+    img.logo {
+      max-width: 200px;
+    }
+    .instagram-icon{
+      float: right;
+      margin-top: 13px;
+    }
+
+    .container {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .row {
+      position: relative;
+      width: 100%;
+    }
+
+    .row [class^="col"] {
+      float: left;
+      margin: 0.5rem 2%;
+      min-height: 0.125rem;
+    }
+
+   
+
+    .col-1,
+    .col-2,
+    .col-3,
+    .col-4,
+    .col-5,
+    .col-6,
+    .col-7,
+    .col-8,
+    .col-9,
+    .col-10,
+    .col-11,
+    .col-12 {
+      width: 96%;
+    }
+
+    .col-1-sm {
+      width: 4.33%;
+    }
+
+    .col-2-sm {
+      width: 12.66%;
+    }
+
+    .col-3-sm {
+      width: 21%;
+    }
+
+    .col-4-sm {
+      width: 29.33%;
+    }
+
+    .col-5-sm {
+      width: 37.66%;
+    }
+
+    .col-6-sm {
+      width: 46%;
+    }
+
+    .col-7-sm {
+      width: 54.33%;
+    }
+
+    .col-8-sm {
+      width: 62.66%;
+    }
+
+    .col-9-sm {
+      width: 71%;
+    }
+
+    .col-10-sm {
+      width: 79.33%;
+    }
+
+    .col-11-sm {
+      width: 87.66%;
+    }
+
+    .col-12-sm {
+      width: 96%;
+    }
+
+    .row::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    .hidden-sm {
+      display: none;
+    }
+
+   
+
+    @media only screen and (min-width: 33.75em) {  /* 540px */
+      .container {
+        width: 80%;
+      }
+    }
+    @media only screen and (max-width: 719px) {
+      .row-no-p [class^="col"]:first-child,
+      .row-no-p [class^="col"]:last-child{
+        margin-left: 0;
+        margin-right: 0;
+      }
+      .bottom-section {
+        margin-top: 20px;
+      }
+     }
+    @media only screen and (min-width: 720px) {  /* 720px */
+      .col-1 {
+        width: 4.33%;
+      }
+
+      .col-2 {
+        width: 12.66%;
+      }
+
+      .col-3 {
+        width: 21%;
+      }
+
+      .col-4 {
+        width: 29.33%;
+      }
+
+      .col-5 {
+        width: 37.66%;
+      }
+
+      .col-6 {
+        width: 46%;
+      }
+
+      .col-7 {
+        width: 54.33%;
+      }
+
+      .col-8 {
+        width: 62.66%;
+      }
+
+      .col-9 {
+        width: 71%;
+      }
+
+      .col-10 {
+        width: 79.33%;
+      }
+
+      .col-11 {
+        width: 87.66%;
+      }
+
+      .col-12 {
+        width: 96%;
+      }
+
+      .hidden-sm {
+        display: block;
+      }
+
+      .row-no-p [class^="col"]:first-child {
+        margin-left: 0;
+      }
+      .row-no-p [class^="col"]:last-child {
+        margin-right: 0;
+      }
+      .bottom-section {
+        margin-top: 30px;
+      }
+    }
+    @media only screen and (max-width: 959px) {
+      body {
+        font-size: 1.1rem;
+      }
+    }
+
+    @media only screen and (min-width: 960px) { /* 960px */
+      .container {
+        width: 75%;
+        max-width: 1100px;
+      }
+      .bottom-section {
+        margin-top: 40px;
+      }
+    }
+
+    @media only screen and (min-width: 1200px) {
+      .bottom-section {
+        margin-top: 70px;
+      }
+    }
+
+    .sub-title{
+      font-weight: 400;
+      font-size: 1.3em;
+    }
+
+    h1, h2, h3, h4, h5, h6{
+      margin: 0;
+      font-weight: 400;
+    }
+    a{
+      text-decoration: none;
+      color: #111;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="top-header">
+      <div class="row">
+        <div class="col-12">
+          <img src="237logo.svg" alt="Numero237 Logo" class="logo">
+          <div class="instagram-icon">
+            <a href="https://www.instagram.com/numero.237/" target="_blank">
+              <svg fill="#000000" height="18px" width="18px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                viewBox="-271 273 256 256" xml:space="preserve">
+              <path d="M-64.5,273h-157c-27.3,0-49.5,22.2-49.5,49.5v52.3v104.8c0,27.3,22.2,49.5,49.5,49.5h157c27.3,0,49.5-22.2,49.5-49.5V374.7
+                v-52.3C-15.1,295.2-37.3,273-64.5,273z M-50.3,302.5h5.7v5.6v37.8l-43.3,0.1l-0.1-43.4L-50.3,302.5z M-179.6,374.7
+                c8.2-11.3,21.5-18.8,36.5-18.8s28.3,7.4,36.5,18.8c5.4,7.4,8.5,16.5,8.5,26.3c0,24.8-20.2,45.1-45.1,45.1s-44.9-20.3-44.9-45.1
+                C-188.1,391.2-184.9,382.1-179.6,374.7z M-40,479.5C-40,493-51,504-64.5,504h-157c-13.5,0-24.5-11-24.5-24.5V374.7h38.2
+                c-3.3,8.1-5.2,17-5.2,26.3c0,38.6,31.4,70,70,70c38.6,0,70-31.4,70-70c0-9.3-1.9-18.2-5.2-26.3H-40V479.5z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-5">
+        <img src="bg-image.png" alt="Numero237 store preview">
+      </div>
+      <div class="col-7">
+        <h1 class="m-b20">Opening soon.</h1>
+        <p>
+          Designer Fashion and Vintage finds. Numero 237 is a fashion store with a selection of pre-owned
+          designer pieces form the ‘House of Liza’ fashion archives along with vintage ceramics and
+          second-hand fashion and photography books.
+        </p>
+        <div class="bottom-section">
+          <div class="row row-no-p">
+            <div class="col-6">
+              <strong class="sub-title">Location</strong><br>
+              Rua de Miguel Bombarda,<br>
+              2374050-381 Porto
+            </div>
+            <div class="col-6">
+              <strong class="sub-title">Contact</strong><br>
+              <a href="mailto:info@numero237.com">info@numero237.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
